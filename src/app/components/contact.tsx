@@ -31,24 +31,31 @@ export default function Contact() {
     }, 2000);
   };
 
+  // In Contact.tsx - Updated contact info
   const contactInfo = [
+    {
+      icon: '📱',
+      title: 'WhatsApp',
+      value: 'Primary Contact',
+      link: 'https://wa.me/your-number'
+    },
+    {
+      icon: '✈️',
+      title: 'Telegram',
+      value: '@yourusername',
+      link: 'https://t.me/yourusername'
+    },
+    {
+      icon: '📸',
+      title: 'Instagram',
+      value: '@elvirasabirova',
+      link: 'https://instagram.com/elvirasabirova'
+    },
     {
       icon: '📧',
       title: 'Email',
-      value: 'elvira@ejemplo.com',
-      link: 'mailto:elvira@ejemplo.com'
-    },
-    {
-      icon: '📱',
-      title: 'Teléfono',
-      value: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
-    },
-    {
-      icon: '📍',
-      title: 'Ubicación',
-      value: 'Ciudad, País',
-      link: '#'
+      value: 'hello@elvirasabirova.com',
+      link: 'mailto:hello@elvirasabirova.com'
     }
   ];
 

@@ -8,26 +8,37 @@ export default function About() {
         
         <div className="prose prose-lg max-w-none text-gray-600 space-y-6">
           <p className="text-lg leading-relaxed">
-            Hey, curious, and low-key deafened for the media words (though I didn&apos;t know it yet). 
-            By the time I hit 11, I had a whole YouTube channel up and running.
+            I’m Elvira Sabirova, a content creator with over 10 years of experience, helping people and products look natural and confident on camera.
+            I film in Valencia and edit for clients worldwide.
           </p>
           
           <p className="text-lg leading-relaxed">
-            After realizing my videos earned more audience with a little aesthetic, I proudly hit 
-            800 followers and proudly through my own famous. That&apos;s when it clicked: 
-            people are welcome for pretty visuals.
+            Key facts about me:
           </p>
           
           <div className="bg-primary-50 p-6 rounded-lg border-l-4 border-primary-400">
             <p className="font-semibold text-primary-300">
-              Bradshaw - 2000+ followed on in-depth
+              <li>10+ years of experience in content creation</li>
+              <li>Worked with global brands</li>
+              <li>Organic blog with 80,000 followers</li>
+              <li>Experience with clients from Spain, the U.S. and Ukraine</li>
+              <li>Fast and dynamic editing</li>
+              <li>Fluent in four languages: RU / UA / EN / ES</li>
+              <li>Skilled at helping people feel comfortable on camera</li>
+              <li>Work across all niches and adapt my style to the client’s brand</li>
             </p>
           </div>
-          
-          <p className="text-lg leading-relaxed">
-            I love content creating and story making important toys - how to convey beauty and 
-            what&apos;s mentioned - how to bring old growth and work around and make fun of the audience.
-          </p>
+          <div className="flex flex-wrap justify-center gap-3 mt-8">
+          <span className="bg-[#ec4899] text-white px-4 py-2 rounded-full text-sm font-medium">
+            🎥 Filming: Valencia
+          </span>
+          <span className="bg-[#ec4899] text-white px-4 py-2 rounded-full text-sm font-medium">
+            ✂️ Editing: Worldwide
+          </span>
+          <span className="bg-[#ec4899] text-white px-4 py-2 rounded-full text-sm font-medium">
+            🌍 Languages: RU/UA/EN/ES
+          </span>
+        </div>          
         </div>
       </div>
     </section>

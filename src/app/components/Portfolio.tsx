@@ -9,7 +9,7 @@ export default function Portfolio() {
       image: "/images/portfolio/photo-1.jpg",
       title: "Sesión de Retratos",
       description: "Sesión personalizada en estudio con iluminación natural",
-      category: "fotografia"
+      category: "session"
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ export default function Portfolio() {
       image: "/images/portfolio/photo-2.jpg",
       title: "Fotografía de Moda",
       description: "Sesión editorial para marca de ropa local",
-      category: "fotografia"
+      category: "session"
     },
     // Solo 3 proyectos para el home
   ];
@@ -68,9 +68,9 @@ export default function Portfolio() {
                   </p>
                   <div className="flex items-center justify-between pt-3 border-t border-gray-100">
                     <span className={`text-sm font-medium ${
-                      item.category === "fotografia" ? "text-primary-300" : "text-primary-500"
+                      item.category === "session" ? "text-primary-300" : "text-primary-500"
                     }`}>
-                      {item.category === "fotografia" ? "📸 Fotografía" : "🎬 Video"}
+                      {item.category === "session" ? "📸 Fotografía" : "🎬 Video"}
                     </span>
                   </div>
                 </div>

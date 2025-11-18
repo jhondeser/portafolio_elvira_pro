@@ -36,7 +36,7 @@ export default function Hero() {
   }, [videoError]);
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 bg-primary-900 pt-16 relative">
+    <section className="min-h-[100vh]  flex items-center justify-center px-4 bg-primary-900 relative">
       {/* Video de fondo */}
       {!videoError && (
         <video
@@ -73,15 +73,15 @@ export default function Hero() {
           <div className="flex justify-between items-end">
             {/* Esquina inferior izquierda */}
             <div className="text-left">
-              <p className="text-xl md:text-2xl lg:text-3xl text-white drop-shadow-md">
-                Content creator / Video editor
+              <p className="text-sm md:text-base text-white max-w-2xl mx-auto italic drop-shadow-md">
+                Content Creator • Valencia → Worldwide
               </p>
             </div>
 
             {/* Esquina inferior derecha */}
             <div className="text-right">
-              <p className="text-lg md:text-xl text-white italic drop-shadow-md max-w-md">
-                &ldquo;Capturing moments, editing emotions.&rdquo;
+              <p className="text-sm md:text-base text-white max-w-2xl mx-auto italic drop-shadow-md">
+                "Helping people and products look natural, confident and authentic on camera"
               </p>
             </div>
           </div>
