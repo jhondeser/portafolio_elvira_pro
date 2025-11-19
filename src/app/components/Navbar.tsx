@@ -56,11 +56,20 @@ export default function Navbar() {
           <div className="flex-shrink-0">
             <button 
               onClick={() => router.push('/')}
-              className={`text-2xl font-bold transition-all duration-300 ${
-                isScrolled ? 'text-primary-400' : 'text-primary-400 drop-shadow-lg'
-              }`}
+              className="flex items-center space-x-2"
             >
-              Elvira
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ec4899"/>
+                    <stop offset="100%" stop-color="#db2777"/>
+                  </linearGradient>
+                </defs>
+                <circle cx="20" cy="20" r="18" fill="url(#gradient)"/>
+                <path d="M14 14H26V18H14V14Z" fill="white"/>
+                <path d="M14 22H26V26H14V22Z" fill="white"/>
+                <path d="M18 30H22V34H18V30Z" fill="white"/>
+              </svg>
             </button>
           </div>
 

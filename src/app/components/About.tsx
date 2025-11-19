@@ -17,7 +17,7 @@ export default function About() {
           </p>
           
           <div className="bg-primary-50 p-6 rounded-lg border-l-4 border-primary-400">
-            <p className="font-semibold text-primary-300">
+            <ul className="font-semibold text-primary-300">
               <li>10+ years of experience in content creation</li>
               <li>Worked with global brands</li>
               <li>Organic blog with 80,000 followers</li>
@@ -26,7 +26,7 @@ export default function About() {
               <li>Fluent in four languages: RU / UA / EN / ES</li>
               <li>Skilled at helping people feel comfortable on camera</li>
               <li>Work across all niches and adapt my style to the client’s brand</li>
-            </p>
+            </ul>
           </div>
           <div className="flex flex-wrap justify-center gap-3 mt-8">
           <span className="bg-[#ec4899] text-white px-4 py-2 rounded-full text-sm font-medium">
