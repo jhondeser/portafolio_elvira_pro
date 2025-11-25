@@ -10,11 +10,11 @@ import Philosophy from './components/Philosophy'
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Navbar />
+      <Navbar/>
       <div id="inicio">
         <Hero />
       </div>
-      <About />
+      <About/>
       <Philosophy />
       <Services />
       <Portfolio />
