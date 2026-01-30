@@ -1,10 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 export default function Services() {
   const [flippedCards, setFlippedCards] = useState<number[]>([]);
+  const [isMobile, setIsMobile] = useState(true); // Inicialmente true para SSR
 
   const services = [
     {
@@ -60,6 +61,28 @@ export default function Services() {
     }
   ];
 
+  // Inicializar después del montaje (solo en cliente)
+  useEffect(() => {
+    const checkIsMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    // Verificar inmediatamente
+    checkIsMobile();
+    
+    // Configurar listener para cambios de tamaño
+    const handleResize = () => {
+      checkIsMobile();
+    };
+    
+    window.addEventListener('resize', handleResize);
+    
+    // Limpiar listener al desmontar
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const handleCardFlip = (index: number) => {
     if (flippedCards.includes(index)) {
       setFlippedCards(flippedCards.filter(i => i !== index));
@@ -69,7 +92,7 @@ export default function Services() {
   };
 
   const handleCardHover = (index: number) => {
-    if (window.innerWidth >= 768) {
+    if (!isMobile) {  // ← Solo si NO es móvil (escritorio)
       if (!flippedCards.includes(index)) {
         setFlippedCards([...flippedCards, index]);
       }
@@ -77,7 +100,7 @@ export default function Services() {
   };
 
   const handleCardLeave = (index: number) => {
-    if (window.innerWidth >= 768) {
+    if (!isMobile) {  // ← Solo si NO es móvil (escritorio)
       if (flippedCards.includes(index)) {
         setFlippedCards(flippedCards.filter(i => i !== index));
       }
@@ -162,20 +185,6 @@ export default function Services() {
           ))}
         </div>
       </div>
-
-      <style jsx>{`
-        .preserve-3d {
-          transform-style: preserve-3d;
-          perspective: 1000px;
-        }
-        .rotate-y-180 {
-          transform: rotateY(180deg);
-        }
-        .backface-hidden {
-          backface-visibility: hidden;
-          -webkit-backface-visibility: hidden;
-        }
-      `}</style>
     </section>
   );
 }
