@@ -82,12 +82,12 @@ export default function Hero() {
           {/* Desktop: lado a lado */}
           <div className="hidden md:flex justify-between items-end">
             <div className="text-left">
-              <p className="text-sm md:text-base text-gray-800 italic drop-shadow-md bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg">
+              <p className="text-sm md:text-base text-gray-800 drop-shadow-md bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg">
                 Content Creator • Valencia → Worldwide
               </p>
             </div>
             <div className="text-right">
-              <p className="text-sm md:text-base text-gray-800 italic drop-shadow-md max-w-xs bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg">
+              <p className="text-sm text-center md:text-base text-gray-800 drop-shadow-md max-w-xs bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg">
                 "Helping people and products look natural, confident and authentic on camera"
               </p>
             </div>

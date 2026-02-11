@@ -37,25 +37,25 @@ export default function Contact() {
       icon: '📱',
       title: 'WhatsApp',
       value: 'Primary Contact',
-      link: 'https://wa.me/your-number'
+      link: 'https://wa.me/+34627668609'
     },
     {
       icon: '✈️',
       title: 'Telegram',
-      value: '@yourusername',
-      link: 'https://t.me/yourusername'
+      value: '@sabirova_elvira',
+      link: 'https://t.me/sabirova_elvira'
     },
     {
       icon: '📸',
       title: 'Instagram',
       value: '@elvirasabirova',
-      link: 'https://instagram.com/elvirasabirova'
+      link: 'https://www.instagram.com/elvirasabirova.content'
     },
     {
       icon: '📧',
       title: 'Email',
-      value: 'hello@elvirasabirova.com',
-      link: 'mailto:hello@elvirasabirova.com'
+      value: 'elvirasabsab@gmail.com',
+      link: 'mailto:elvirasabsab@gmail.com?subject=Contacto%20desde%20Portfolio'
     }
   ];
 
