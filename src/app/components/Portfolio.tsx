@@ -113,7 +113,8 @@ export default function Portfolio() {
                   <div className="relative overflow-hidden h-[400px] flex-shrink-0">
                     <div className="w-full h-full overflow-hidden bg-gray-100">
                       <video 
-                        src={item.video}                        
+                        src={item.video}
+                        poster={item.thumbnail}                         
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                         playsInline
                         preload="metadata"
