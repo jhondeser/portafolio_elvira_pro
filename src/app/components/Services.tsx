@@ -171,7 +171,7 @@ export default function Services() {
                       className="w-full bg-white text-primary-600 hover:bg-gray-100 font-bold py-3 px-4 rounded-lg text-center transition-colors duration-300 mt-auto"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      Más Información
+                      More Info
                     </Link>
                     
                     <div className="mt-2 text-white/80 font-medium text-center text-sm">

@@ -5,9 +5,6 @@ export default function Footer() {
         <p className="text-lg mb-4">
           © {new Date().getFullYear()} Elvira Sabirova. All rights reserved.
         </p>
-        <p className="text-primary-200 italic">
-          a wrap.
-        </p>
       </div>
     </footer>
   )

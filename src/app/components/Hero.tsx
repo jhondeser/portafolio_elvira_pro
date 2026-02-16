@@ -95,10 +95,10 @@ export default function Hero() {
 
           {/* Mobile: apilado vertical */}
           <div className="md:hidden flex flex-col items-center space-y-4">
-            <p className="text-sm text-gray-800 italic drop-shadow-md bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg text-center">
+            <p className="text-sm text-gray-800 drop-shadow-md bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg text-center">
               Content Creator • Valencia → Worldwide
             </p>
-            <p className="text-sm text-gray-800 italic drop-shadow-md bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg text-center">
+            <p className="text-sm text-gray-800 drop-shadow-md bg-white/70 backdrop-blur-sm px-4 py-2 rounded-lg text-center">
               "Helping people and products look natural, confident and authentic on camera"
             </p>
           </div>

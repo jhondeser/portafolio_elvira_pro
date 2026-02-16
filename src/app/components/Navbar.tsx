@@ -13,6 +13,7 @@ export default function Navbar() {
     { name: 'About Me', href: '#about', type: 'anchor' as const },
     { name: 'Portfolio', href: '/proyectos', type: 'page' as const },
     { name: 'Contact', href: '#contact', type: 'anchor' as const },
+    { name: 'Services', href: '#services', type: 'anchor' as const }
   ];
 
   useEffect(() => {

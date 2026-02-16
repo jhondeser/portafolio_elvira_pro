@@ -23,7 +23,7 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simular envío del formulario
+    // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
       setIsSubmitted(true);
@@ -31,7 +31,6 @@ export default function Contact() {
     }, 2000);
   };
 
-  // In Contact.tsx - Updated contact info
   const contactInfo = [
     {
       icon: '📱',
@@ -55,32 +54,32 @@ export default function Contact() {
       icon: '📧',
       title: 'Email',
       value: 'elvirasabsab@gmail.com',
-      link: 'mailto:elvirasabsab@gmail.com?subject=Contacto%20desde%20Portfolio'
+      link: 'mailto:elvirasabsab@gmail.com?subject=Contact%20from%20Portfolio'
     }
   ];
 
   return (
-    <section id="contacto" className="py-20 px-4 bg-gray-50">
+    <section id="contact" className="py-20 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary-400 mb-4">
-            Contacto
+            Contact
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            ¿Tienes un proyecto en mente? Hablemos y hagámoslo realidad.
+            Have a project in mind? Let's talk and make it happen.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Información de Contacto */}
+          {/* Contact Information */}
           <div>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Ponte en Contacto
+              Get in Touch
             </h3>
             <p className="text-gray-600 mb-8">
-              Estoy siempre interesada en nuevos proyectos y colaboraciones. 
-              No dudes en contactarme para discutir tus ideas.
+              I'm always interested in new projects and collaborations. 
+              Don't hesitate to contact me to discuss your ideas.
             </p>
 
             <div className="space-y-6">
@@ -103,9 +102,9 @@ export default function Contact() {
               ))}
             </div>
 
-            {/* Redes Sociales */}
+            {/* Social Media */}
             <div className="mt-8">
-              <h4 className="font-semibold text-gray-900 mb-4">Sígueme en</h4>
+              <h4 className="font-semibold text-gray-900 mb-4">Follow Me</h4>
               <div className="flex space-x-4">
                 {[
                   { name: 'Instagram', icon: '📸', url: '#' },
@@ -126,26 +125,26 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Formulario de Contacto */}
+          {/* Contact Form */}
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
-              Envíame un Mensaje
+              Send Me a Message
             </h3>
 
             {isSubmitted ? (
               <div className="text-center py-8">
                 <div className="text-6xl mb-4">✅</div>
                 <h4 className="text-xl font-bold text-gray-900 mb-2">
-                  ¡Mensaje Enviado!
+                  Message Sent!
                 </h4>
                 <p className="text-gray-600">
-                  Gracias por contactarme. Te responderé lo antes posible.
+                  Thank you for contacting me. I'll get back to you as soon as possible.
                 </p>
                 <button
                   onClick={() => setIsSubmitted(false)}
                   className="mt-6 bg-[#c084fc] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#a855f7] transition-colors"
                 >
-                  Enviar Otro Mensaje
+                  Send Another Message
                 </button>
               </div>
             ) : (
@@ -153,7 +152,7 @@ export default function Contact() {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
-                      Nombre *
+                      Name *
                     </label>
                     <input
                       type="text"
@@ -163,7 +162,7 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#c084fc] focus:border-transparent transition-all duration-300"
-                      placeholder="Tu nombre"
+                      placeholder="Your name"
                     />
                   </div>
                   <div>
@@ -178,14 +177,14 @@ export default function Contact() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#c084fc] focus:border-transparent transition-all duration-300"
-                      placeholder="tu@email.com"
+                      placeholder="your@email.com"
                     />
                   </div>
                 </div>
 
                 <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
-                    Asunto *
+                    Subject *
                   </label>
                   <input
                     type="text"
@@ -195,13 +194,13 @@ export default function Contact() {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#c084fc] focus:border-transparent transition-all duration-300"
-                    placeholder="¿En qué puedo ayudarte?"
+                    placeholder="How can I help you?"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Mensaje *
+                    Message *
                   </label>
                   <textarea
                     id="message"
@@ -211,7 +210,7 @@ export default function Contact() {
                     required
                     rows={6}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#c084fc] focus:border-transparent transition-all duration-300 resize-none"
-                    placeholder="Cuéntame más sobre tu proyecto..."
+                    placeholder="Tell me more about your project..."
                   />
                 </div>
 
@@ -226,10 +225,10 @@ export default function Contact() {
                         <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                         <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                       </svg>
-                      Enviando...
+                      Sending...
                     </span>
                   ) : (
-                    'Enviar Mensaje'
+                    'Send Message'
                   )}
                 </button>
               </form>

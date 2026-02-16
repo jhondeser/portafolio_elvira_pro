@@ -12,85 +12,95 @@ export default function Portfolio() {
   const [clickedVideo, setClickedVideo] = useState<number | null>(null);
 
   const portfolioItems = [
-      {
+    {
       id: 1,
       title: "Event Highlights",
-      description: "Filming and editing event content for a large festival in Spain. Atmosphere, emotions, and key moments captured on videо",
+      description: "Filming and editing event content for a large festival in Spain. Atmosphere, emotions, and key moments captured on video.",
       video: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848265/IMG_4836_frrgi5.mp4`,
+      thumbnail: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848265/IMG_4836_frrgi5.jpg`,
       category: ["session", "editing"],
-      date: "2024-01-15"
+      categoryText: "📸 Session + 🎬 Editing"
     },
     {
       id: 2,
       title: "Behind the Scenes",
-      description: " Backstage filming and editing for a large podcast. Short-form content created for audience warm-up, stories, and social media while the main episode is in production",
+      description: "Backstage filming and editing for a large podcast. Short-form content created for audience warm-up, stories, and social media while the main episode is in production.",
       video: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848280/IMG_4837_f6zl5n.mov`,
+      thumbnail: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848280/IMG_4837_f6zl5n.jpg`,
       category: ["session", "editing"],
-      date: "2024-01-20"
+      categoryText: "📸 Session + 🎬 Editing"
     },
     {
       id: 3,
       title: "Photoshoot BTS",
       description: "Behind-the-scenes filming of a photoshoot, creating short-form content for Reels and Stories during the shooting process.",
       video: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848277/IMG_4820_y1t61f.mov`,
+      thumbnail: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848277/IMG_4820_y1t61f.jpg`,
       category: ["session", "editing"],
-      date: "2024-02-05"
+      categoryText: "📸 Session + 🎬 Editing"
     },
     {
       id: 4,
       title: "Fashion Content",
-      description: "A 4-hour photoshoot and video session creating lifestyle content for a clothing brand, designed for a full month of social media",
+      description: "A 4-hour photoshoot and video session creating lifestyle content for a clothing brand, designed for a full month of social media.",
       video: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848263/IMG_7482_jjrigl.mp4`,
+      thumbnail: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848263/IMG_7482_jjrigl.jpg`,
       category: ["session", "editing"],
-      date: "2024-02-10"
+      categoryText: "📸 Session + 🎬 Editing"
     },
     {
       id: 5,
       title: "Beauty Content",
       description: "Filming and editing content for a cosmetologist, working with a model and creating videos for use in Reels and Stories.",
       video: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848240/IMG_3017_oswqg3.mov`,
+      thumbnail: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848240/IMG_3017_oswqg3.jpg`,
       category: ["session", "editing"],
-      date: "2024-02-15"
+      categoryText: "📸 Session + 🎬 Editing"
     },
     {
       id: 6,
       title: "Construction Content",
       description: "Content creation for a renovation company, including filming properties before, during, and after renovation to maintain audience engagement on social media.",
       video: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848241/IMG_7269_v5gngy.mp4`,
+      thumbnail: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848241/IMG_7269_v5gngy.jpg`,
       category: ["session", "editing"],
-      date: "2024-02-20"
+      categoryText: "📸 Session + 🎬 Editing"
     },
     {
       id: 7,
       title: "Real Estate Content",
-      description: " Filming and editing aesthetic property videos in collaboration with a real estate agency, including on-camera presentation by the agent for sales-focused Reels.",
+      description: "Filming and editing aesthetic property videos in collaboration with a real estate agency, including on-camera presentation by the agent for sales-focused Reels.",
       video: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848229/IMG_1505_uuc3j9.mp4`,
+      thumbnail: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848229/IMG_1505_uuc3j9.jpg`,
       category: ["session", "editing"],
-      date: "2024-02-25"
+      categoryText: "📸 Session + 🎬 Editing"
     },
     {
       id: 8,
       title: "Kitchen Brand Content",
       description: "Lifestyle content creation from scratch for a kitchen company, including filming and editing for social media.",
       video: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770850261/IMG_8277_w38x0c.mp4`,
+      thumbnail: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770850261/IMG_8277_w38x0c.jpg`,
       category: ["session", "editing"],
-      date: "2024-02-25"
+      categoryText: "📸 Session + 🎬 Editing"
     },
     {
       id: 9,
       title: "Real Estate Content",
       description: "Filming and editing aesthetic property videos in collaboration with a real estate agency, including on-camera presentation by the agent for sales-focused Reels.",
       video: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770850405/IMG_8806_qr05s2.mp4`,
+      thumbnail: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770850405/IMG_8806_qr05s2.jpg`,
       category: ["session", "editing"],
-      date: "2024-02-25"
+      categoryText: "📸 Session + 🎬 Editing"
     },
     {
       id: 10,
       title: "Expert Beauty Content",
       description: "Studio filming and editing of expert talking-head Reels for a cosmetologist, including dynamic short-form videos.",
       video: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848959/IMG_8863_b3gz93.mov`,
+      thumbnail: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848959/IMG_8863_b3gz93.jpg`,
       category: ["session", "editing"],
-      date: "2024-02-25"
+      categoryText: "📸 Session + 🎬 Editing"
     }
   ];
 
@@ -262,7 +272,8 @@ export default function Portfolio() {
                     <div className="relative overflow-hidden">
                       <div className="aspect-[3/4] overflow-hidden bg-gray-100">
                         <video 
-                          src={item.video}                        
+                          src={item.video} 
+                          poster={item.thumbnail}                       
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                           playsInline
                           preload="metadata"
@@ -347,9 +358,6 @@ export default function Portfolio() {
                         <div className="flex items-center gap-2">
                           <span className={`text-sm font-medium ${getCategoryTextColor(item.category)}`}>
                             {getCategoryText(item.category)}
-                          </span>
-                          <span className="text-xs text-gray-400">
-                            {item.date}
                           </span>
                         </div>
                         <button 

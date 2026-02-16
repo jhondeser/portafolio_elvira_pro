@@ -15,27 +15,28 @@ export default function Portfolio() {
       title: "Event Highlights",
       description: "Filming and editing event content for a large festival in Spain. Atmosphere, emotions, and key moments captured on video",
       video: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848265/IMG_4836_frrgi5.mp4`,
+      // Generar thumbnail automáticamente con Cloudinary
+      thumbnail: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848265/IMG_4836_frrgi5.jpg`,
       category: "session-editing",
       categoryText: "📸 Session + 🎬 Editing",
-      date: "2024"
     },
     {
       id: 2,
       title: "Behind the Scenes",
       description: "Backstage filming and editing for a large podcast. Short-form content created for audience warm-up, stories, and social media.",
       video: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848280/IMG_4837_f6zl5n.mov`,
+      thumbnail: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848280/IMG_4837_f6zl5n.jpg`,
       category: "session-editing",
       categoryText: "📸 Session + 🎬 Editing",
-      date: "2024"
     },
     {
       id: 3,
       title: "Photoshoot BTS",
       description: "Behind-the-scenes filming of a photoshoot, creating short-form content for Reels and Stories during the shooting process.",
       video: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848277/IMG_4820_y1t61f.mov`,
+      thumbnail: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848277/IMG_4820_y1t61f.jpg`,
       category: "session-editing",
       categoryText: "📸 Session + 🎬 Editing",
-      date: "2024"
     }
   ];
 
@@ -191,9 +192,6 @@ export default function Portfolio() {
                       <div className="flex items-center gap-2">
                         <span className="text-sm font-medium text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-500">
                           {item.categoryText}
-                        </span>
-                        <span className="text-xs text-gray-400">
-                          {item.date}
                         </span>
                       </div>
                       <button 
