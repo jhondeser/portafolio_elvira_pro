@@ -24,7 +24,7 @@ export const servicesData: ServiceType[] = [
     ],
     editingOptions: {
       basic: {
-        price: "15€",
+        price: "20€",
         description: "edición básica (cortes + música + transiciones), hasta 40 segundos"
       },
       advanced: "Ediciones avanzadas — el precio depende de la complejidad"
@@ -53,7 +53,7 @@ export const servicesData: ServiceType[] = [
     type: "content-editing",
     pricing: {
       basic: {
-        price: "15€",
+        price: "20€",
         description: "edición básica (cortes + música + transiciones), hasta 40 segundos"
       },
       advanced: "Ediciones avanzadas — el precio depende de la complejidad"
