@@ -154,8 +154,8 @@ export default function FeaturedPortfolio() {
                           clickedVideo === item.id
                             ? 'opacity-100 scale-110' 
                             : playingVideo === item.id 
-                              ? 'bg-black/0 hover:bg-black/60 scale-100 opacity-0' 
-                              : 'bg-primary-400/90 hover:bg-primary-500 group-hover:scale-110 opacity-0 group-hover:opacity-100'
+                              ? 'md:bg-black/60 bg-black/0 hover:bg-black/60 scale-100 md:opacity-0 opacity-0' 
+                              : 'bg-primary-400/90 hover:bg-primary-500 group-hover:scale-110 md:opacity-0 group-hover:opacity-100'
                         }`
                       }>
                         <svg 
