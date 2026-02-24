@@ -11,12 +11,12 @@ export default function FeaturedPortfolio() {
   // Solo los primeros 3 videos
   const featuredItems = [
     {
-      id: 1,
-      title: "Event Highlights",
-      description: "Filming and editing event content for a large festival in Spain. Atmosphere, emotions, and key moments captured on video.",
-      video: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848265/IMG_4836_frrgi5.mp4`,
-      thumbnail: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848265/IMG_4836_frrgi5.jpg`,
-      category: "session-editing",
+      id: 10,
+      title: "Expert Beauty Content",
+      description: "Studio filming and editing of expert talking-head Reels for a cosmetologist, including dynamic short-form videos.",
+      video: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848959/IMG_8863_b3gz93.mov`,
+      thumbnail: "/images/cover_1.JPEG",
+      category: ["session", "editing"],
       categoryText: "📸 Session + 🎬 Editing"
     },
     {

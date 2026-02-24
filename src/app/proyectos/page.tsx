@@ -13,6 +13,15 @@ export default function Portfolio() {
 
   const portfolioItems = [
     {
+      id: 10,
+      title: "Expert Beauty Content",
+      description: "Studio filming and editing of expert talking-head Reels for a cosmetologist, including dynamic short-form videos.",
+      video: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848959/IMG_8863_b3gz93.mov`,
+      thumbnail: "/images/cover_1.JPEG",
+      category: ["session", "editing"],
+      categoryText: "📸 Session + 🎬 Editing"
+    },
+    {
       id: 1,
       title: "Event Highlights",
       description: "Filming and editing event content for a large festival in Spain. Atmosphere, emotions, and key moments captured on video.",
@@ -93,15 +102,6 @@ export default function Portfolio() {
       category: ["session", "editing"],
       categoryText: "📸 Session + 🎬 Editing"
     },
-    {
-      id: 10,
-      title: "Expert Beauty Content",
-      description: "Studio filming and editing of expert talking-head Reels for a cosmetologist, including dynamic short-form videos.",
-      video: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848959/IMG_8863_b3gz93.mov`,
-      thumbnail: `https://res.cloudinary.com/dbfeks8ru/video/upload/v1770848959/IMG_8863_b3gz93.jpg`,
-      category: ["session", "editing"],
-      categoryText: "📸 Session + 🎬 Editing"
-    }
   ];
 
   const filters = [
