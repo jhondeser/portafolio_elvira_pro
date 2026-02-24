@@ -229,7 +229,7 @@ export default function FeaturedPortfolio() {
         {/* Botón Ver más */}
         <div className="text-center mt-12">
           <Link 
-            href="/portfolio" 
+            href="/proyectos" 
             className="bg-primary-400 text-white px-8 py-4 rounded-full font-semibold hover:bg-primary-500 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-2"
           >
             View All Projects
