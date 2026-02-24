@@ -39,10 +39,7 @@ export default function FeaturedPortfolio() {
     }
   ];
 
-  // Función para obtener el color según categoría
-  const getCategoryColor = (category: string) => {
-    return 'bg-gradient-to-r from-primary-400 to-secondary-500';
-  };
+  
 
   // Función para pausar video
   const pauseVideo = (id: number) => {
@@ -63,6 +60,19 @@ export default function FeaturedPortfolio() {
         });
       }
     }, 50);
+  };
+
+// Función para obtener el color según categoría
+  const getCategoryColor = (categories: string | string[]) => {
+    // Convertir a array si es string
+    const categoryArray = Array.isArray(categories) ? categories : [categories];
+    
+    if (categoryArray.includes('session') && categoryArray.includes('editing')) {
+      return 'bg-gradient-to-r from-primary-400 to-secondary-500';
+    }
+    return categoryArray.includes('session') 
+      ? 'bg-primary-400/90' 
+      : 'bg-secondary-500/90';
   };
 
   // Manejar clic en video
